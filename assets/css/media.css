@@ -1,0 +1,371 @@
+@media (min-width: 1500px) {
+    .next.slider-btn, .theme-slider.owl-theme .owl-controls .owl-buttons .owl-next {
+        right: 7%;
+    }
+    .prev.slider-btn, .theme-slider.owl-theme .owl-controls .owl-buttons .owl-prev {
+        left: 7%;
+    }
+}
+@media (max-width:1200px) {
+    .theme-container{
+        padding-right: 15px;
+        padding-left: 15px;
+    }  
+}
+@media (min-width:1200px) {
+    .title-wrap p, .testimonials-content > p {      
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+    }
+}
+
+@media (min-width:992px)and (max-width:1024px) { 
+    .navigation nav {
+        float: right;
+        width: 85%;
+    }
+    .navbar-brand{
+        width: 15%;
+    }
+    .primary-navbar {
+        margin-right: 0;
+    }
+    .video-frame{
+        width: auto;
+        margin: 20px;
+        padding: 10px;
+    }
+    .main-player-song{
+        width: 20%;
+    }
+}
+@media (min-width:768px) {
+    .newsletter .col-sm-4 {
+        margin-right: 25%;
+    }       
+}
+@media (min-width:768px)and (max-width:991px){
+    .navigation nav {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    .navbar-brand{
+        width: 100%;
+        text-align: center;
+    }
+    .primary-navbar {
+        margin-right: 0;
+    }
+    .header-icons{
+        padding-right: 0;
+    }
+
+    .theme-slider.owl-theme .owl-controls .owl-page , .theme-slider.owl-theme .owl-controls .owl-page {
+        display: none;
+    }
+    .testimonials-content.text-center{    
+        margin: 50px;
+    }
+    .blog-content {
+        padding: 15px;
+    }
+    .carousel-inner .theme-container.container{
+        top: 5%;
+    }
+    .caption-text .extra-bold-font{
+        font-size: 40px;
+    }
+    .caption-text .extra-bold-font .border{
+        padding: 25px;
+    }
+    .caption-text .extra-bold-font .border span{
+        font-size: 60px;
+    }
+    .caption-text .light-font{
+        line-height: normal;
+    }
+    .feature-list::before{
+        top: 95px;
+    }
+    .our-album-wrap{
+        height: auto;
+        width: auto;
+    }
+    .team-overlay,.album-overlay{
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+    }
+    .video-frame{
+        width: auto;
+        margin: 20px;
+        padding: 10px;
+    }
+    .video-frame iframe{
+        height: 400px;
+    }
+    .main-player-wrap{
+        position: static;
+        background: #000;
+    }
+    /*comment*/
+    .comment-author .avatar{
+        top: 0;
+    }
+    .comment-metadata{
+        padding-right: 80px;
+        display: block;
+    }
+    .comment-content{
+        margin: 15px 0 0 0;
+        width: 100%;
+    }
+    .comment-form-author, .comment-form-email, .comment-form-url{
+        float: none;
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+@media (max-width:767px) {
+    .header-search .search-form label{
+        bottom: -25px;
+        top: auto;
+    }
+    .navigation .navbar-collapse {
+        max-height: 250px;
+        overflow: auto;
+    }
+    .navigation nav {
+        float: none;
+    }
+    .logo .logo-title   {
+        float: right;
+    }  
+    .primary-navbar > li > a {
+        color: #ffffff;
+        text-align: right;
+    }
+    .primary-navbar {
+        float: right !important;
+        margin: 0;
+        padding: 10px 0;
+        background-color:#000000;
+        width: 100%;
+    }
+    .primary-navbar .open .dropdown-menu {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: relative;
+        margin: 15px;
+    }
+    .navbar-brand{
+        float: none;
+    }
+    #home .header-wrap,.header-wrap{
+        padding-bottom: 25px;
+        padding-top: 25px;
+        position: static ;
+        background: #ffffff none repeat scroll 0 0;
+    }
+    .primary-navbar > li > a::after{
+        left: auto;
+        right: 16px;
+        background: #fff;
+    }
+    .primary-navbar > li.dropdown > a.dropdown-toggle::before{
+        left: 15px;
+    }
+    .header-icons {
+        padding-top: 0;
+    }
+    .navbar-collapse{
+        max-height: 250px;
+        overflow: auto;
+    }
+    .navigation .primary-navbar li .dropdown-menu{
+        margin: 0 15px;
+        max-width: 100%;
+        padding: 5px 0;
+    }
+    .navigation .dropdown-menu li ul {
+        display: block;      
+        left: 0;     
+    }
+    .main-player-wrap{
+        position: static;
+        background: #000;
+    }
+    /*home*/
+    .theme-slider.owl-theme .owl-controls .owl-page , .theme-slider.owl-theme .owl-controls .owl-page {
+        display: none;
+    }
+    .testimonials-wrap .theme-slider.owl-theme .owl-controls{
+        display: none !important;
+    }
+    .testimonials-content.text-center{
+        margin-top: 25px;
+    }
+    .testimonials-content > p{
+        font-size: 16px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .post-content {
+        text-align: center;
+    }
+    .upcoming{
+        text-align: center;
+    }
+    .upcoming-show .date{
+        display: inline-block;
+        margin-left: -4px;
+        float: none;
+        vertical-align: top;
+    }
+    .event-author {
+        display: inline-block;
+    }
+    .newsletter .submit-btn{
+        padding: 15px 5px;
+    }
+    .blog-tabs ul li a{
+        min-width: 120px;
+    }
+    .video-bg{
+        min-height: auto;
+    }
+    .video-frame{
+        width: auto;
+        margin: 20px;
+        padding: 10px;
+    }
+    .video-frame iframe{
+        height: 300px;
+    }
+    .popup-register {
+        padding: 15px;
+    }
+
+    /*comment*/
+    .comment-author .avatar{
+        top: 0;
+    }
+    .comment-metadata{
+        padding-right: 80px;
+        display: block;
+    }
+    .comment-content{
+        margin: 15px 0 0 0;
+        width: 100%;
+    }
+    .comment-form-author, .comment-form-email, .comment-form-url{
+        float: none;
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    form .submit-btn{
+        min-width: auto;
+    }
+}
+@media (min-width:481px) and (max-width:767px){
+    .caption-text .extra-bold-font {
+        font-size: 40px;
+        margin-bottom: 0;
+        height: auto;
+        width: auto;
+        padding: 10px;
+    }
+    .caption-text .light-font {
+        display: inline-block;
+        font-size: 40px;
+        line-height: normal;
+    }
+    .caption-text .extra-bold-font .border{
+        padding: 20px;
+    }
+    .caption-text .extra-bold-font .border span {
+        display: block;
+        font-size: 50px;
+    }
+    .carousel-inner .theme-container.container{
+        top: 5%;
+    }
+
+}
+@media (max-width:480px){
+    .theme-slider.owl-theme .owl-controls .owl-buttons .owl-next, .theme-slider.owl-theme .owl-controls .owl-buttons .owl-prev {
+        display: none;
+    }
+    .caption-text .extra-bold-font {
+        font-size: 20px;
+        border: 2px solid rgb(255, 255, 255);       
+        height: auto;
+        width: auto;
+        padding: 10px;
+    }
+    .caption-text .light-font {
+        display: inline-block;
+        font-size: 22px;
+        line-height: normal;
+    }
+    .caption-text .extra-bold-font .border{
+        padding: 10px;
+    }
+    .caption-text .extra-bold-font .border span {
+        display: block;
+        font-size: 22px;
+    }
+
+    .carousel-inner .theme-container.container{
+        top: 30%;
+    }
+}
+@media (max-width:380px){
+    .theme-btn, .theme-btn-1 {
+        min-width: 130px;
+    }
+    .caption-text .light-font{
+        display: block;
+    }
+    .caption-text .extra-bold-font { 
+        margin: 0;
+    }
+    .carousel-inner .theme-container.container{
+        top: 0%;
+    }
+    .soundcloud-youtube .btn {
+        display: table;
+        margin: auto;
+    }
+    .gallery-wrap .col-xs-6{
+        display: inline-block;
+        width: 100%;
+    }
+    .caption-wrap {
+        display: table;
+        margin: 30px auto auto;
+    }
+    .testimonials-content.text-center{
+        top: 0;
+    }
+    .testimonials-content > p{
+        font-size: 12px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .blog-tabs ul li a {
+        border-right: 0 none;
+        border-bottom: 1px solid #d2dce6;
+        display: block;
+    }
+    .blog-tabs ul li, .blog-tabs ul {
+        display: block;
+        margin-left: 0;
+    }
+    .footer-social > li{
+        margin: 15px;
+    }
+}

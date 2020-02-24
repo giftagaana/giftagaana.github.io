@@ -1,0 +1,30 @@
+/*----------------------------------Theme Colors Starts-------------------------------- */
+a:hover,
+a:active,
+a:focus {
+    color: #06d0d7;
+}
+.theme-color, .hover-color:hover, .hover-color:focus, .footer-social a:hover,.footer-social a:focus, 
+.breadcrumb-menubar > li > a:hover, .breadcrumb-menubar > li > a:focus{
+    color: #06d0d7; 
+}
+
+.theme-btn-big:hover,.theme-btn-big:focus,
+.donation-wrap .theme-btn:hover,.donation-wrap .theme-btn:focus{
+    border-color: #06d0d7;
+    color: #06d0d7;
+    background-color: #fff;
+}
+.widget-wrap.tag-cloud a:hover,.widget-wrap.tag-cloud a:focus, .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover,
+.pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover,.to-top, 
+.pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span:focus, .pagination > li > span:hover,
+.post-next:hover, .post-previous:hover, .post-next:focus, .post-previous:focus{
+    background-color: #06d0d7;
+}
+.title-devider .line-1, .widget-wrap.tag-cloud a:hover,.widget-wrap.tag-cloud a:focus,
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, 
+.pagination > .active > span:focus, .pagination > .active > span:hover, .pagination > li > a:focus, .pagination > li > a:hover,
+.pagination > li > span:focus, .pagination > li > span:hover, .post-next:hover, .post-previous:hover, .post-next:focus, .post-previous:focus{
+    border-color: #06d0d7;
+}
+/*------------------------Theme Colors Ends------------------------ */

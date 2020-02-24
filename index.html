@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>DJ Studio || Music, DJ Band One Page Template</title>
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+        <!-- CSS Global -->
+        <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">   
+        <link href="assets/plugins/bootstrap-rtl-master/dist/css/bootstrap-rtl.min.css" rel="stylesheet" type="text/css"> 
+        <link href="assets/plugins/owl-carousel/assets/owl.carousel.css" rel="stylesheet" type="text/css">   
+        <link href="assets/plugins/prettyphoto/css/prettyPhoto.css" rel="stylesheet">
+        <link href="assets/plugins/jquery-ui-1.11.4.custom/jquery-ui.min.css" rel="stylesheet" type="text/css">       
+        <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">  
+
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/media.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/multicolor/theme-color.css" rel="stylesheet" id="theme-config-link">      
+        <!--[if lt IE 9]>
+        <script src="assets/plugins/iesupport/html5shiv.js"></script>
+        <script src="assets/plugins/iesupport/respond.js"></script>
+        <![endif]-->
+    </head>
+    <body id="home" class="wide">
+        <!-- PRELOADER -->
+        <div id="loading">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+        <!-- /PRELOADER -->
+
+        <!-- WRAPPER -->
+        <main class="wrapper">
+            <!-- Main Slider Start -->
+            <section>   
+                <div id="main-slider" class="owl-carousel owl-theme theme-slider banner-wrap">
+                    <div class="item">  
+                        <div class="carousel-inner slider">
+                            <span class="mask-overlay"></span>      
+                            <img class="visible-lg" src="assets/img/slider/bg-1.jpg" alt="...">   
+                            <img class="hidden-lg" src="assets/img/slider/bg-big-1.jpg" alt="...">   
+                            <div class="theme-container container">
+                                <div class="caption-text">                                                           
+                                    <h4 class="light-font">play</h4>
+                                    <h2 class="extra-bold-font"> <span class="border"> <span> Music </span> Just For You </span> </h2>
+                                    <h4 class="light-font">Enjoy</h4>                                                             
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">  
+                        <div class="carousel-inner slider">
+                            <span class="mask-overlay"></span>      
+                            <img class="visible-lg" src="assets/img/slider/bg-1.jpg" alt="...">   
+                            <img class="hidden-lg" src="assets/img/slider/bg-big-1.jpg" alt="...">                        
+                            <div class="theme-container container">
+                                <div class="caption-text">                                                           
+                                    <h4 class="light-font">play</h4>
+                                    <h2 class="extra-bold-font"> <span class="border"> <span> Music </span> Just For You </span> </h2>
+                                    <h4 class="light-font">Enjoy</h4>                                                              
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AUDIO PLAYER -->
+                <div class="main-player" data-audio-autoload="1" data-audio-loop="1" data-audio-shuffle="0" data-audio-volume="0.7">
+                    <audio></audio>
+                    <div class="main-player-wrap">
+                        <div class="main-player-song"></div>
+                        <div class="main-player-error-message"></div>
+                        <i class="main-player-prev"><span class="glyphicon glyphicon-step-backward"></span></i>
+                        <div class="main-player-play-pause">
+                            <i class="main-player-play"><span class="glyphicon glyphicon-play"></span></i>
+                            <i class="main-player-pause"><span class="glyphicon glyphicon-pause"></span></i>
+                            <i class="main-player-loading-icon"><span class="glyphicon glyphicon-hourglass"></span></i>
+                            <i class="main-player-error-icon"><span class="glyphicon glyphicon-warning-sign"></span></i>
+                        </div>
+                        <i class="main-player-next"><span class="glyphicon glyphicon-step-forward"></span></i>
+                        <div class="main-player-scrubber">
+                            <div class="main-player-progress"><b></b></div>
+                            <div class="main-player-loaded"></div>
+                            <div class="main-player-scrubber-back"></div>
+                        </div>
+                        <div class="main-player-time">
+                            <em class="main-player-played">00:00</em>/<strong class="main-player-duration">00:00</strong>
+                        </div>
+                        <div class="main-player-volume">
+                            <div class="main-player-vslider"><div><div></div><b><span></span></b></div></div>
+                            <i class="main-player-volume-high"><span class="glyphicon glyphicon-volume-up"></span></i>
+                            <i class="main-player-volume-low"><span class="glyphicon glyphicon-volume-down"></span></i>
+                            <i class="main-player-volume-off"><span class="glyphicon glyphicon-volume-off"></span></i>
+                        </div>
+                        <i class="main-player-shuffle off"><span class="glyphicon glyphicon-random"></span></i>
+                        <i class="main-player-loop"><span class="glyphicon glyphicon-retweet"></span></i>
+                        <div class="main-player-list-wrapper">
+                            <i class="main-player-list-button"><span class="glyphicon glyphicon-th-list"></span></i>
+                            <ul class="main-player-list">
+                                <!-- Add songs here - you can use small images instead of glyphicons-->
+                                <li data-audio="songs/A-Ha%20-%20Take%20On%20Me.mp3">
+                                    <span class="glyphicon glyphicon-book"></span>
+                                    <h5>A-Ha</h5>
+                                    <p>Take on me</p>
+                                </li>
+                                <li data-audio="songs/A-Ha%20-%20Lifelines.mp3">
+                                    <span class="glyphicon glyphicon-envelope"></span>
+                                    <h5>A-Ha</h5>
+                                    <p>Lifelines</p>
+                                </li>
+                                <li data-audio="songs/A-Ha%20-%20The%20Blue%20Sky.mp3">
+                                    <span class="glyphicon glyphicon-hourglass"></span>
+                                    <h5>A-Ha</h5>
+                                    <p>Blue Sky</p>
+                                </li>
+                                <li data-audio="songs/A-HA%20-%20Velvet.mp3	">
+                                    <span class="glyphicon glyphicon-usd"></span>
+                                    <h5>A-Ha</h5>
+                                    <p>Velvet</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- / AUDIO Player Ends -->
+
+            </section>            
+            <!-- / Main Slider Ends -->
+
+            <!-- Social Media -->
+            <div class="header-icons">
+                <ul>
+                    <li> <a href="#" > <img src="assets/img/logo/fb.jpg" alt=""> </a> </li>
+                    <li> <a href="#"> <img src="assets/img/logo/google-plus.jpg" alt=""> </a> </li>
+                    <li> <a href="#"> <img src="assets/img/logo/twitter.jpg" alt=""> </a> </li>                                   
+                    <li> <a href="#" id="open-popup-search" class="header-link-search"> <img src="assets/img/logo/search.jpg" alt=""> </a> </li>
+                </ul>
+            </div>
+            <!-- / Social Media -->
+
+            <!-- Header -->
+            <header>               
+                <section class="header-wrap upper-text white-color"> 
+                    <div class="container theme-container">   
+                        <div class="row">
+                            <div class="col-sm-12 navigation"> 
+                                <div class="logo  navbar-brand">
+                                    <h2 class="logo-title secondery-font"> <a href="index.html">  <b>DJ Studio</b> </a> </h2>                                
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-navigation" >
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>                                        
+                                    </div> 
+                                </div>
+                                <nav>                                                               
+                                    <div class="collapse navbar-collapse no-padding" id="primary-navigation">                                        
+                                        <ul class="nav navbar-nav primary-navbar">
+                                            <li class="dropdown active">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" >Home</a>
+                                                <ul class="dropdown-menu">  
+                                                    <li><a href="index.html">Home Simple</a></li>
+                                                    <li><a href="index-non-sticky.html">Home Non Sticky</a></li>
+                                                    <li><a href="index-parallax.html">Home Parallax</a></li>
+                                                    <li><a href="index-animation.html">Home Animation</a></li>
+                                                    <li><a href="index-animation-parallax.html">Home Parallax & Animation</a></li>  
+                                                </ul>
+                                            </li>
+                                            <li><a href="#upcoming-show">Shows</a></li>
+                                            <li><a href="#our-members">Members</a></li>                                          
+                                            <li><a href="#gallery">Gallery</a></li>
+                                            <li><a href="#soundcloud-youtube">channel</a></li>
+                                            <li><a href="#recent-news">News</a></li>                                           
+                                            <li><a href="#contact-us">Contact</a></li>                                 
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" >Pages</a>
+                                                <ul class="dropdown-menu">  
+                                                    <li><a href="blog.html">Blog Right Sidebar</a></li>
+                                                    <li><a href="blog-left.html">Blog Left Sidebar</a></li>
+                                                    <li><a href="single-blog.html">Single Blog Right Sidebar</a></li>
+                                                    <li><a href="single-blog-left.html">Single Blog Left Sidebar</a></li>   
+                                                    <li><a href="404-page.html">Error Page</a></li> 
+                                                    <li class="dropdown">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" >Sub Menu</a>
+                                                        <ul class="dropdown-menu">  
+                                                            <li><a href="#">Sub Menu 1</a></li>
+                                                            <li><a href="#">Sub Menu 2</a></li>    
+                                                            <li class="dropdown">
+                                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" >Sub Menu 3</a>
+                                                                <ul class="dropdown-menu">  
+                                                                    <li><a href="#">Sub Menu 4</a></li>
+                                                                    <li><a href="#">Sub Menu 5</a></li> 
+                                                                    <li><a href="#">Sub Menu 6</a></li> 
+                                                                </ul>
+                                                            </li> 
+                                                        </ul>
+                                                    </li> 
+                                                </ul>
+                                            </li> 
+                                        </ul>
+                                    </div>                         
+                                </nav>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>            
+            </header>
+            <!-- /Header -->
+
+            <!-- CONTENT AREA -->           
+
+            <!-- Our Best Albums Start -->
+            <section id="best-albums" class="space-80">
+                <div class="container theme-container">
+                    <div class="title-wrap space-bottom-50">
+                        <h2 class="section-title space-bottom-15">Our Best Albums</h2>
+                        <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
+                            consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+                    </div>
+                    <div class="our-album row">
+                        <div class="col-sm-4 space-top-30 feature-list"> 
+                            <div class="our-album-wrap text-center">
+                                <a href="#"> <img alt="" src="assets/img/our-team/team-1.jpg"> </a>
+                                <div class="album-overlay"> <a href="#"><span class="fa fa-bars"></span>  <b>List Album</b> </a> </div>
+                            </div>  
+                            <div class="album-details gray-color text-center">
+                                <a class="title-1" href="#">Album Name Here</a>
+                                <h5>Artist Name Here</h5>                               
+                            </div>
+                        </div>
+                        <div class="col-sm-4 space-top-30 feature-list"> 
+                            <div class="our-album-wrap text-center">
+                                <a href="#"> <img alt="" src="assets/img/our-team/team-2.jpg"> </a>
+                                <div class="album-overlay"> <a href="#"><span class="fa fa-bars"></span> <b>List Album</b> </a> </div>
+                            </div>  
+                            <div class="album-details gray-color text-center">
+                                <a class="title-1" href="#">Album Name Here</a>
+                                <h5>Artist Name Here</h5>                               
+                            </div>
+                        </div>
+                        <div class="col-sm-4 space-top-30 feature-list"> 
+                            <div class="our-album-wrap text-center">
+                                <a href="#"> <img alt="" src="assets/img/our-team/team-3.jpg"> </a>
+                                <div class="album-overlay"> <a href="#"><span class="fa fa-bars"></span>  <b>List Album</b> </a> </div>
+                            </div>  
+                            <div class="album-details gray-color text-center">
+                                <a class="title-1" href="#">Album Name Here</a>
+                                <h5>Artist Name Here</h5>                               
+                            </div>
+                        </div>
+                        <div class="col-sm-12 text-center space-top-50 space-bottom-20">                           
+                            <a class="theme-btn-1 btn">See All Albums</a>
+                        </div>
+                    </div>
+                </div>                
+
+            </section>
+            <!-- / Our Best Albums Ends -->
+
+            <!-- Upcoming Shows Start -->
+            <section  id="upcoming-show"  class="clearfix">   
+                <div class=" col-md-12 no-padding black-bg">
+                    <div class="row">
+                        <div class="col-md-6 space-80 upcoming">
+                            <h2 class="section-title upper-text white-color  col-sm-offset-1">Upcoming Shows</h2>
+                            <div class="upcoming-show row space-top-30">
+                                <div class="col-sm-5 col-sm-offset-1">
+                                    <div class="date"><b>  <span>27</span> June </b></div>
+                                    <div class="event-author"> <img alt="" src="assets/img/upcoming-show/author-1.jpg"> </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h2 class="title-1 white-color">Nex Upcoming Music Event Name</h2>
+                                    <p> <span class="fa fa-map-marker"></span> Philadelphia, PA 19103 </p>
+                                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin.</p>
+                                    <a class="title-1 theme-color" data-toggle="modal" href="#register">Ticket Buy and Details <span class="fa fa-caret-left"></span> </a>
+                                </div>
+                            </div>
+                            <div class="upcoming-show row space-top-30">
+                                <div class="col-sm-5 col-sm-offset-1">
+                                    <div class="date"><b>  <span>27</span> June </b></div>
+                                    <div class="event-author"> <img alt="" src="assets/img/upcoming-show/author-2.jpg"> </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h2 class="title-1 white-color">Upcoming Show Name</h2>
+                                    <p> <span class="fa fa-map-marker"></span> Philadelphia, PA 19103 </p>
+                                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin.</p>
+                                    <a class="title-1 theme-color" data-toggle="modal" href="#register-2">Ticket Buy and Details <span class="fa fa-caret-left"></span> </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 upcoming-img">
+                            <img src="assets/img/upcoming-show/upcoming-show.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- / Upcoming Shows Ends -->
+
+
+            <!-- Our Best Members Start -->
+            <section class="space-80" id="our-members">               
+                <div class="container theme-container">                   
+                    <div class="title-wrap space-bottom-20">
+                        <h2 class="section-title space-bottom-15">Our Best Members</h2>  
+                        <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
+                            consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>                       
+                    </div>
+                    <div class="our-team row">
+                        <div class="col-sm-4 space-top-30 feature-list"> 
+                            <div class="our-team-wrap text-center">
+                                <a href="#"> <img alt="" src="assets/img/our-team/member-1.jpg"> </a>
+                                <div class="team-overlay"> <a class="view-icn" href="#"> <img alt="" src="assets/img/our-team/plus.png"> </a> </div>
+                            </div>  
+                            <div class="team-details gray-color text-center">
+                                <a class="title-1" href="#">Elizabeth Doe</a>
+                                <h6>Designer</h6>                               
+                            </div>
+                        </div>
+                        <div class="col-sm-4 space-top-30 feature-list"> 
+                            <div class="our-team-wrap text-center">
+                                <a href="#"> <img alt="" src="assets/img/our-team/member-2.jpg"> </a>
+                                <div class="team-overlay"> <a class="view-icn" href="#"> <img alt="" src="assets/img/our-team/plus.png"> </a> </div>
+                            </div>  
+                            <div class="team-details gray-color text-center">
+                                <a class="title-1" href="#">Elizabeth Doe</a>
+                                <h6>Designer</h6>                              
+                            </div>
+                        </div>
+                        <div class="col-sm-4 space-top-30 feature-list"> 
+                            <div class="our-team-wrap text-center">
+                                <a href="#"> <img alt="" src="assets/img/our-team/member-3.jpg"> </a>
+                                <div class="team-overlay"> <a class="view-icn" href="#"> <img alt="" src="assets/img/our-team/plus.png"> </a> </div>
+                            </div>  
+                            <div class="team-details gray-color text-center">
+                                <a class="title-1" href="#">Elizabeth Doe</a>
+                                <h6>Designer</h6>                               
+                            </div>
+                        </div>
+                        <div class="col-sm-12 text-center space-top-50 space-bottom-20">
+                            <a href="#" class="theme-btn-1 btn">See All Members</a>
+                        </div>
+                    </div>    
+                </div>               
+            </section>
+            <!-- Our Best Members Start -->
+
+
+            <!-- Testimonials Slider Start -->
+            <section id="testimonials-slider"> 
+                <div class="testimonials-wrap">                   
+                    <div class="testimonials-slider theme-slider">
+                        <div class="item"> 
+                            <div class="testimonials-img text-center">
+                                <span class="mask-overlay"></span>
+                                <a href="#"> <img src="assets/img/slider/slide-1.jpg" alt=""> </a>
+                                <div class="testimonials-content text-center">
+                                    <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
+                                        consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+                                    <a class="video-icon fa fa-caret-left"  data-toggle="modal"  href="#video-popup" data-iframe="https://player.vimeo.com/video/35707672?rel=0&autoplay=1"></a>
+                                </div>
+                            </div>
+                            <div class="testimonials-info text-center">                         
+                                <a href="#" class="theme-color">Jcob Doe</a>
+                                <h5>Listener</h5>
+                            </div>                               
+                        </div>   
+                        <div class="item"> 
+                            <div class="testimonials-img text-center">
+                                <span class="mask-overlay"></span>
+                                <a href="#"> <img src="assets/img/slider/slide-1.jpg" alt=""> </a>
+                                <div class="testimonials-content text-center">
+                                    <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
+                                        consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+                                    <a data-iframe="https://player.vimeo.com/video/6370469?rel=0&amp;autoplay=1" href="#video-popup" data-toggle="modal" class="video-icon fa fa-caret-left"></a>
+                                </div>
+                            </div>
+                            <div class="testimonials-info text-center">                         
+                                <a href="#" class="theme-color">Jcob Doe</a>
+                                <h5>Listener</h5>
+                            </div>                               
+                        </div> 
+                        <div class="item"> 
+                            <div class="testimonials-img text-center">
+                                <span class="mask-overlay"></span>
+                                <a href="#"> <img src="assets/img/slider/slide-1.jpg" alt=""> </a>
+                                <div class="testimonials-content text-center">
+                                    <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
+                                        consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+                                    <a data-iframe="https://player.vimeo.com/video/6370469?rel=0&amp;autoplay=1" href="#video-popup" data-toggle="modal" class="video-icon fa fa-caret-left"></a>
+                                </div>
+                            </div>
+                            <div class="testimonials-info text-center">                         
+                                <a href="#" class="theme-color">Jcob Doe</a>
+                                <h5>Listener</h5>
+                            </div>                               
+                        </div> 
+                        <div class="item"> 
+                            <div class="testimonials-img text-center">
+                                <span class="mask-overlay"></span>
+                                <a href="#"> <img src="assets/img/slider/slide-1.jpg" alt=""> </a>
+                                <div class="testimonials-content text-center">
+                                    <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
+                                        consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+                                    <a data-iframe="https://player.vimeo.com/video/6370469?rel=0&amp;autoplay=1" href="#video-popup" data-toggle="modal" class="video-icon fa fa-caret-left"></a>
+                                </div>
+                            </div>
+                            <div class="testimonials-info text-center">                         
+                                <a href="#" class="theme-color">Jcob Doe</a>
+                                <h5>Listener</h5>
+                            </div>                               
+                        </div> 
+                        <div class="item"> 
+                            <div class="testimonials-img text-center">
+                                <span class="mask-overlay"></span>
+                                <a href="#"> <img src="assets/img/slider/slide-1.jpg" alt=""> </a>
+                                <div class="testimonials-content text-center">
+                                    <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
+                                        consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+                                    <a data-iframe="https://player.vimeo.com/video/6370469?rel=0&amp;autoplay=1" href="#video-popup" data-toggle="modal" class="video-icon fa fa-caret-left"></a>
+                                </div>
+                            </div>
+                            <div class="testimonials-info text-center">                         
+                                <a href="#" class="theme-color">Jcob Doe</a>
+                                <h5>Listener</h5>
+                            </div>                               
+                        </div> 
+                    </div>            
+
+                    <div class="slider-navigation gray-nav">                
+                        <span data-slide="prev"  class="prev slider-btn">
+                            <i class="fa fa-angle-left"></i>
+                        </span>
+                        <span data-slide="next" class="next slider-btn">
+                            <i class="fa fa-angle-right"></i>
+                        </span>
+                    </div>
+                </div>              
+            </section>
+            <!-- / Testimonials Slider Ends -->
+
+
+            <!-- Gallery Start -->
+            <section id="gallery" class="space-80">
+                <div class="container theme-container">
+                    <div class="title-wrap space-bottom-30">
+                        <h2 class="section-title">Our Gallery</h2>  
+                        <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
+                            consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+                    </div>
+
+                    <div class="gallery-wrap">
+                        <div class="clearfix text-center blog-tabs">
+                            <ul class="filtrable clearfix bold-font">
+                                <li><a href="#" data-filter="*"> All </a></li>
+                                <li class="current"><a href="#" data-filter=".photos" >Photos</a></li>
+                                <li><a href="#" data-filter=".videos">Videos</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="row isotope isotope-items" id="gallery-filter">
+                            <div class="col-md-2 col-sm-3 col-xs-6 isotope-item photos"> 
+                                <div class="caption-wrap">
+                                    <a href="#"> <img alt="" src="assets/img/gallery/img-2.jpg"> </a>
+                                    <div class="caption-overlay">
+                                        <div class="div-table">
+                                            <div class="caption-content div-cell">                                              
+                                                <p class="caption-buttons no-margin">                                                   
+                                                    <a class="caption-link" title="Gallery" data-gal="prettyPhoto[gallery2]" href="assets/img/gallery/img-big-1.jpg"><i class="fa fa-search"></i></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-xs-6 isotope-item videos photos"> 
+                                <div class="caption-wrap">
+                                    <a href="#"> <img alt="" src="assets/img/gallery/img-3.jpg"> </a>
+                                    <div class="caption-overlay">
+                                        <div class="div-table">
+                                            <div class="caption-content div-cell">                                              
+                                                <p class="caption-buttons no-margin">                                                   
+                                                    <a class="caption-link" title="Gallery" data-gal="prettyPhoto[gallery2]" href="assets/img/gallery/img-big-2.jpg"><i class="fa fa-search"></i></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-md-2 col-sm-3 col-xs-6 isotope-item photos"> 
+                                <div class="caption-wrap">
+                                    <a href="#"> <img alt="" src="assets/img/gallery/img-4.jpg"> </a>
+                                    <div class="caption-overlay">
+                                        <div class="div-table">
+                                            <div class="caption-content div-cell">                                              
+                                                <p class="caption-buttons no-margin">                                                   
+                                                    <a class="caption-link" title="Gallery" data-gal="prettyPhoto[gallery2]" href="assets/img/gallery/img-big-3.jpg"><i class="fa fa-search"></i></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-md-2 col-sm-3 col-xs-6 isotope-item videos photos"> 
+                                <div class="caption-wrap">
+                                    <a href="#"> <img alt="" src="assets/img/gallery/img-7.jpg"> </a>
+                                    <div class="caption-overlay">
+                                        <div class="div-table">
+                                            <div class="caption-content div-cell">                                              
+                                                <p class="caption-buttons no-margin">                                                   
+                                                    <a class="caption-link" title="Gallery" data-gal="prettyPhoto[gallery2]" href="assets/img/gallery/img-big-1.jpg"><i class="fa fa-search"></i></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-md-2 col-sm-3 col-xs-6 isotope-item photos"> 
+                                <div class="caption-wrap">
+                                    <a href="#"> <img alt="" src="assets/img/gallery/img-5.jpg"> </a>
+                                    <div class="caption-overlay">
+                                        <div class="div-table">
+                                            <div class="caption-content div-cell">                                              
+                                                <p class="caption-buttons no-margin">                                                   
+                                                    <a class="caption-link" title="Gallery" data-gal="prettyPhoto[gallery2]" href="assets/img/gallery/img-big-4.jpg"><i class="fa fa-search"></i></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-md-2 col-sm-3 col-xs-6 isotope-item videos photos"> 
+                                <div class="caption-wrap">
+                                    <a href="#"> <img alt="" src="assets/img/gallery/img-6.jpg"> </a>
+                                    <div class="caption-overlay">
+                                        <div class="div-table">
+                                            <div class="caption-content div-cell">                                              
+                                                <p class="caption-buttons no-margin">                                                   
+                                                    <a class="caption-link" title="Gallery" data-gal="prettyPhoto[gallery2]" href="assets/img/gallery/img-big-5.jpg"><i class="fa fa-search"></i></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-md-2 col-sm-3 col-xs-6 isotope-item photos"> 
+                                <div class="caption-wrap">
+                                    <a href="#"> <img alt="" src="assets/img/gallery/img-7.jpg"> </a>
+                                    <div class="caption-overlay">
+                                        <div class="div-table">
+                                            <div class="caption-content div-cell">                                              
+                                                <p class="caption-buttons no-margin">                                                   
+                                                    <a class="caption-link" title="Gallery" data-gal="prettyPhoto[gallery2]" href="assets/img/gallery/img-big-1.jpg"><i class="fa fa-search"></i></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-md-2 col-sm-3 col-xs-6 isotope-item videos photos"> 
+                                <div class="caption-wrap">
+                                    <a href="#"> <img alt="" src="assets/img/gallery/img-8.jpg"> </a>
+                                    <div class="caption-overlay">
+                                        <div class="div-table">
+                                            <div class="caption-content div-cell">                                              
+                                                <p class="caption-buttons no-margin">                                                   
+                                                    <a class="caption-link" title="Gallery" data-gal="prettyPhoto[gallery2]" href="assets/img/gallery/img-big-2.jpg"><i class="fa fa-search"></i></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-md-2 col-sm-3 col-xs-6 isotope-item photos"> 
+                                <div class="caption-wrap">
+                                    <a href="#"> <img alt="" src="assets/img/gallery/img-9.jpg"> </a>
+                                    <div class="caption-overlay">
+                                        <div class="div-table">
+                                            <div class="caption-content div-cell">                                              
+                                                <p class="caption-buttons no-margin">                                                   
+                                                    <a class="caption-link" title="Gallery" data-gal="prettyPhoto[gallery2]" href="assets/img/gallery/img-big-1.jpg"><i class="fa fa-search"></i></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-md-2 col-sm-3 col-xs-6 isotope-item videos photos"> 
+                                <div class="caption-wrap">
+                                    <a href="#"> <img alt="" src="assets/img/gallery/img-10.jpg"> </a>
+                                    <div class="caption-overlay">
+                                        <div class="div-table">
+                                            <div class="caption-content div-cell">                                              
+                                                <p class="caption-buttons no-margin">                                                   
+                                                    <a class="caption-link" title="Gallery" data-gal="prettyPhoto[gallery2]" href="assets/img/gallery/img-big-4.jpg"><i class="fa fa-search"></i></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-md-2 col-sm-3 col-xs-6 isotope-item photos"> 
+                                <div class="caption-wrap">
+                                    <a href="#"> <img alt="" src="assets/img/gallery/img-11.jpg"> </a>
+                                    <div class="caption-overlay">
+                                        <div class="div-table">
+                                            <div class="caption-content div-cell">                                              
+                                                <p class="caption-buttons no-margin">                                                   
+                                                    <a class="caption-link" title="Gallery" data-gal="prettyPhoto[gallery2]" href="assets/img/gallery/img-big-5.jpg"><i class="fa fa-search"></i></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-xs-6 isotope-item videos photos"> 
+                                <div class="caption-wrap">
+                                    <a href="#"> <img alt="" src="assets/img/gallery/img-12.jpg"> </a>
+                                    <div class="caption-overlay">
+                                        <div class="div-table">
+                                            <div class="caption-content div-cell">                                              
+                                                <p class="caption-buttons no-margin">                                                   
+                                                    <a class="caption-link" title="Gallery" data-gal="prettyPhoto[gallery2]" href="assets/img/gallery/img-big-2.jpg"><i class="fa fa-search"></i></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-xs-6 isotope-item videos"> 
+                                <div class="caption-wrap">
+                                    <a href="#"> <img alt="" src="assets/img/gallery/img-4.jpg"> </a>
+                                    <div class="caption-overlay">
+                                        <div class="div-table">
+                                            <div class="caption-content div-cell">                                              
+                                                <p class="caption-buttons no-margin">                                                   
+                                                    <a class="caption-link" title="Gallery" data-gal="prettyPhoto[gallery2]" href="assets/img/gallery/img-big-3.jpg"><i class="fa fa-search"></i></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-md-2 col-sm-3 col-xs-6 isotope-item videos"> 
+                                <div class="caption-wrap">
+                                    <a href="#"> <img alt="" src="assets/img/gallery/img-2.jpg"> </a>
+                                    <div class="caption-overlay">
+                                        <div class="div-table">
+                                            <div class="caption-content div-cell">                                              
+                                                <p class="caption-buttons no-margin">                                                   
+                                                    <a class="caption-link" title="Gallery" data-gal="prettyPhoto[gallery2]" href="assets/img/gallery/img-big-3.jpg"><i class="fa fa-search"></i></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-md-2 col-sm-3 col-xs-6 isotope-item videos"> 
+                                <div class="caption-wrap">
+                                    <a href="#"> <img alt="" src="assets/img/gallery/img-7.jpg"> </a>
+                                    <div class="caption-overlay">
+                                        <div class="div-table">
+                                            <div class="caption-content div-cell">                                              
+                                                <p class="caption-buttons no-margin">                                                   
+                                                    <a class="caption-link" title="Gallery" data-gal="prettyPhoto[gallery2]" href="assets/img/gallery/img-big-3.jpg"><i class="fa fa-search"></i></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>                    
+                    <div class="button-style text-center space-top-50">
+                        <ul class="filtrable clearfix">
+                            <li class="all"><a href="#" data-filter="*" class="theme-btn-1 btn">See All Posts</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- / Gallery Ends -->
+
+            <!-- Listen Soundcloud Or Youtube Start -->
+            <section class="space-80 white-color soundcloud-youtube-bg" id="soundcloud-youtube">
+                <div class="mask-overlay"></div>
+                <div class="container theme-container relative-div">                   
+                    <div class="title-wrap space-bottom-30">
+                        <h2 class="section-title space-bottom-15 white-color">Still Impressed Yet</h2>  
+                        <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
+                            consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+                    </div>                 
+                    <div class="soundcloud-youtube text-center">
+                        <a class="theme-btn-1 btn white-color" href="#">Soundcloud</a>
+                        <span>or</span>
+                        <a class="theme-btn-1 btn white-color" href="#">Youtube</a>
+                        <p class="space-top-45">Check them all and listen our musics</p>
+                    </div>
+                </div>
+            </section>
+            <!-- / Listen Soundcloud Or Youtube Ends -->
+
+            <!-- Our Recent News Start -->
+            <section class="space-80" id="recent-news">               
+                <div class="container theme-container">                   
+                    <div class="title-wrap space-bottom-30">
+                        <h2 class="section-title space-bottom-15">Our Recent News</h2>  
+                        <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
+                            consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="blog-wrap">
+                                <div class="col-md-6 no-padding">
+                                    <div class="blog-img">
+                                        <img src="assets/img/blog/blog-1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 no-padding space-15">
+                                    <div class="blog-content">
+                                        <div class="date gray-color"> <b> <span>17</span> June 2015 </b> </div>
+                                        <h6 class="upper-text">photography</h6>
+                                        <a href="#" class="title-1">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.</a>
+                                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.Maecenas dictum tortor ipsum, vel bibendum nulla egestas ac. Cras nisl eros, semper in auctor eget, convallis quis arcu.</p>
+                                        <a href="#" class="theme-color"><b> Read More </b><span class="fa fa-caret-left"></span> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="blog-wrap  space-bottom-15">
+                                <div class="blog-img">
+                                    <img src="assets/img/blog/blog-2.jpg" alt="">
+                                </div>
+                                <div class="blog-content space-30">
+                                    <div class="date gray-color"> <b> <span>19</span> June 2015 </b> </div>
+                                    <h6 class="upper-text">photography</h6>
+                                    <a href="#" class="title-1">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.</a>
+                                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.Maecenas dictum tortor ipsum, vel bibendum nulla egestas ac. Cras nisl eros, semper in auctor eget, convallis quis arcu.</p>
+                                    <a href="#" class="theme-color"><b> Read More </b><span class="fa fa-caret-left"></span> </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="blog-wrap  space-bottom-15">
+                                <div class="blog-img">
+                                    <img src="assets/img/blog/blog-3.jpg" alt="">
+                                </div>
+                                <div class="blog-content space-30">
+                                    <div class="date gray-color"> <b> <span>21</span> June 2015 </b> </div>
+                                    <h6 class="upper-text">photography</h6>
+                                    <a href="#" class="title-1">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.</a>
+                                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.Maecenas dictum tortor ipsum, vel bibendum nulla egestas ac. Cras nisl eros, semper in auctor eget, convallis quis arcu.</p>
+                                    <a href="#" class="theme-color"><b> Read More </b><span class="fa fa-caret-left"></span> </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="blog-wrap  space-bottom-15">
+                                <div class="blog-img">
+                                    <img src="assets/img/blog/blog-4.jpg" alt="">
+                                </div>
+                                <div class="blog-content space-30">
+                                    <div class="date gray-color"> <b> <span>27</span> June 2015 </b> </div>
+                                    <h6 class="upper-text">photography</h6>
+                                    <a href="#" class="title-1">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.</a>
+                                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.Maecenas dictum tortor ipsum, vel bibendum nulla egestas ac. Cras nisl eros, semper in auctor eget, convallis quis arcu.</p>
+                                    <a href="#" class="theme-color"><b> Read More </b><span class="fa fa-caret-left"></span> </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 text-center space-top-50 space-bottom-20">
+                            <a href="" class="theme-btn-1 btn" id="showAll">See All Posts</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Our Recent News Ends -->
+
+            <!-- Newsletter Start -->
+            <section id="subscribe" class="space-80 light-bg">
+                <div class="container theme-container">                   
+                    <div class="title-wrap space-bottom-30">
+                        <h2 class="section-title">Start To Join Our Newsletter</h2>  
+                    </div>                 
+                    <div class="news-form text-center">
+                        <form class="newsletter text-center clearfix space-20">                                       
+                            <div class="form-group col-sm-4 col-xs-8 col-sm-offset-3 no-padding">                                     
+                                <label class="sr-only">Enter your email address</label>
+                                <input type="text" placeholder="Enter your email address" class="form-control">
+                            </div>
+                            <div class="form-group col-sm-2 col-xs-4 no-padding">
+                                <button class="theme-btn btn submit-btn" type="submit">Subscribe</button>
+                            </div>                                        
+                        </form>
+                        <p>Dont worry! We will not send any spam to you</p>
+                    </div>
+                </div>
+            </section>
+            <!-- / Newsletter Ends -->
+
+
+            <!-- / CONTENT AREA -->
+
+            <!-- FOOTER -->
+            <footer class="footer" id="contact-us">             
+                <section class="space-80 footer-bg white-color"> 
+                    <span class="mask-overlay"></span>
+                    <div class="container theme-container relative-div">
+                        <div class="title-wrap space-bottom-50">
+                            <h2 class="section-title white-color">Dont Be Hesitate to Say Hello!</h2>
+                            <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
+                                consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+                        </div>
+                        <div class="contact-form  clearfix">
+                            <form id="contact-form" class="contact-form col-md-offset-2 no-padding col-md-8 col-sm-12 white-bg" action="">
+                                <div class="form-group  col-sm-6 no-padding">
+                                    <input type="text" class="form-control name" name="Name" id="Name" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group col-sm-6 no-padding">
+                                    <input type="email" class="form-control" name="Email" id="Email" placeholder="Email Address" required>
+                                </div>
+                                <div class="form-group col-sm-12 no-padding">
+                                    <textarea class="form-control" name="yourmessage" rows="5" cols="10" id="Message" placeholder="Your Massage" required></textarea>
+                                </div>
+                                <div class="form-group col-sm-12 no-padding">
+                                    <input type="submit" name="submit" value="Send Your Message" id="submit_btn" class="theme-btn btn submit-btn" />
+                                </div>
+                            </form>
+                        </div>
+                        <ul class="footer-social text-center space-50">                    
+                            <li> <a href="#"><span class="fa fa-google-plus"></span> </a> </li>
+                            <li> <a href="#"><span class="fa fa-twitter"></span> </a> </li>  
+                            <li> <a href="#"><span class="fa fa-facebook"></span> </a> </li>
+                            <li> <a href="#"><span class="fa fa-linkedin-square"></span> </a> </li>                           
+                        </ul>                      
+                        <p class="copy-rights">All Rights Reserved © Music Theme  |  Designed By  Plex Designs</p>
+                    </div>
+                </section>
+            </footer>
+            <!-- /FOOTER -->
+
+            <div id="to-top" class="to-top"><i class="fa fa-angle-up"></i></div>
+
+        </main>
+        <!-- /WRAPPER -->
+
+        <!-- Popup: Video Player -->
+        <div class="modal fade login-register" id="video-popup" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog video-frame">                 
+                <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="video-link"> 
+                    <iframe id="video" width="800" height="500" allowfullscreen=""> </iframe>
+                </div>
+            </div>
+        </div>
+        <!-- Popup: Video Player -->
+
+        <!-- Popup: Search -->
+        <div class="popup-box page-search-box" >
+            <div>
+                <div class="popup-box-inner">
+                    <form>
+                        <input type="text" placeholder="Search and hit enter" class="search-query">
+                    </form>
+                </div>
+            </div>
+            <a class="close-popup-box close-page-search" href="javascript:void(0)"><i class="fa fa-close"></i></a>
+        </div>
+        <!-- Popup: Search -->
+
+        <!-- Popup: Register -->
+        <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">                 
+                <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <section  class="popup-register"> 
+                    <form id="registration-form" name="registration-form" class="registration-form" action="#" method="post">
+                        <iframe  src="//eventbrite.com/tickets-external?eid=25444112024&ref=etckt" frameborder="0" height="306" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+                    </form>                  
+                </section>
+            </div>
+        </div>
+        <!-- /Popup: Register -->
+
+        <!-- Popup: Register-2 -->
+        <div class="modal fade" id="register-2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">                 
+                <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <section  class="popup-register"> 
+                    <form id="registration-form" name="registration-form" class="registration-form" action="#" method="post">
+                        <iframe  src="//eventbrite.com/tickets-external?eid=25444112024&ref=etckt" frameborder="0" height="306" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+                    </form>                  
+                </section>
+            </div>
+        </div>
+        <!-- /Popup: Register-2 -->
+
+
+        <!-- JS Global -->
+        <script src="assets/plugins/jquery/jquery-1.11.3.min.js"></script>        
+        <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/plugins/prettyphoto/js/jquery.prettyPhoto.js"></script>
+        <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>        
+        <script src="assets/plugins/isotope-master/dist/isotope.pkgd.min.js"></script>
+        <!-- JS Page Level -->
+        <script src="assets/js/theme-ajax-mail.js"></script>
+        <script src="assets/js/audiojs/audio.min.js"></script>
+        <script src="assets/js/theme.js"></script>
+
+
+
+    </body>
+</html>
