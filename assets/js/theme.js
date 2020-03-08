@@ -66,7 +66,7 @@ $(document).ready(function ($) {
     // Dropdown Menu Hover
     // ---------------------------------------------------------------------------------------
     if (window.matchMedia('(min-width: 768px)').matches) {
-        jQuery(".primary-navbar .dropdown").hover(function () {
+        jQuery(".primary-navbar .dropdown").hover(function(){
             jQuery(this).children('.dropdown-menu').hide();
             jQuery(this).children('.dropdown-menu').slideDown('300');
         },
@@ -102,16 +102,10 @@ $(document).ready(function ($) {
     // Main Slider Start
 
     $("#main-slider").owlCarousel({
-        responsive: {
-            0: {items: 1}
-        },
-        rtl: true,
-        items: 1,
-        nav: true,
-        loop: true,
-        autoplay: true,
-        singleitem: true,
-        navText: [
+        navigation: true,
+        autoPlay: false,
+        singleItem: true,
+        navigationText: [
             "<i class='fa fa-angle-left'></i>",
             "<i class='fa fa-angle-right'></i>"
         ]
@@ -123,25 +117,17 @@ $(document).ready(function ($) {
     // ---------------------------------------------------------------------------------------
     // Testimonials Slider Start
     jQuery(".testimonials-slider").owlCarousel({
-         responsive: {
-            0: {items: 1}
-        },
-        rtl: true,
+        autoPlay: true, //Set AutoPlay to 3 seconds
         items: 1,
-        nav: true,
-        loop: true,
-        autoplay: true,
-        singleitem: true,
-        navText: [
-            "<i class='fa fa-angle-left'></i>",
-            "<i class='fa fa-angle-right'></i>"
-        ]
+        itemsDesktop: [1199, 1],
+        itemsTablet: [1024, 1],
+        itemsMobile: [768, 1]
     });
     jQuery("#testimonials-slider .next").on('click', function () {
-        jQuery(".testimonials-slider").trigger('next.owl.carousel');
+        jQuery(".testimonials-slider").trigger('owl.next');
     });
     jQuery("#testimonials-slider .prev").on('click', function () {
-        jQuery(".testimonials-slider").trigger('prev.owl.carousel');
+        jQuery(".testimonials-slider").trigger('owl.prev');
     });
     // Testimonials Slider End
     // ---------------------------------------------------------------------------------------

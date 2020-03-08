@@ -41,7 +41,7 @@ ob_start();
 <?php
 $body = ob_get_contents();
 
-$to = 'jakjim@gmail.com';
+$to = 'your@domain.com';
 $toname = 'Your Name';
 //$anotheraddress = 'email@example.com';
 //$anothername = 'Another Name';
