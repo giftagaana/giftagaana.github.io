@@ -49,7 +49,7 @@
                             <img class="hidden-lg" src="assets/img/slider/gg.jpg" alt="..." width="65%" height="65%">   
                             <div class="theme-container container">
                                 <div class="caption-text">                                                           
-                                    <h1 class="extra-bold-font">Gift Curated Music For Your Loved Ones </h1>
+                                    <h1 class="extra-bold-font">Gift Curated Music To Your Loved Ones </h1>
                                 </div>
                             </div>
                         </div>
@@ -347,10 +347,10 @@
                     <span class="mask-overlay"></span>
                     <div class="container theme-container relative-div">
                         <div class="title-wrap space-bottom-50">
-                            <h2 class="section-title white-color">Enter details for your order</h2>
+                            <h2 class="section-title white-color">Email : GiftAGaana2Someone@gmail.com</h2>
                             <p></p>
                         </div>
-                        <div class="contact-form  clearfix">
+                        <div class="contact-form  clearfix" hidden>
                             <form id="contact-form" class="contact-form col-md-offset-2 no-padding col-md-8 col-sm-12 white-bg" action="">
                                 <div class="form-group  col-sm-12 no-padding">
                                     <input type="text" class="form-control name" name="Name" id="Name" placeholder="Your Name" required>
@@ -362,10 +362,10 @@
                                     <input type="text" class="form-control name" name="Contact" id="Contact" placeholder="Your Contact Number" required>
                                 </div>
                                 <div class="form-group col-sm-6 no-padding">
-                                    <input type="email" class="form-control" name="Occassion" id="Occassion" placeholder="Occassion for gifting" required>
+                                    <input type="text" class="form-control" name="Occassion" id="Occassion" placeholder="Occassion for gifting" required>
                                 </div>
                                 <div class="form-group col-sm-6 no-padding">
-                                    <input type="email" class="form-control" name="Song" id="Song" placeholder="Song you want to gift" required>
+                                    <input type="text" class="form-control" name="Song" id="Song" placeholder="Song you want to gift" required>
                                 </div>
                                 <div class="form-group col-sm-12 no-padding">
                                     <textarea class="form-control" name="yourmessage" rows="5" cols="10" id="Message" placeholder="Your Message" required></textarea>
@@ -447,7 +447,40 @@
         <script src="assets/js/theme-ajax-mail.js"></script>
         <script src="assets/js/audiojs/audio.min.js"></script>
         <script src="assets/js/theme.js"></script>
-
+        <script>
+            $(document).ready(function(){
+              $.fn.serializeObject = function()
+                  {
+                   var o = {};
+                   var a = this.serializeArray();
+                   $.each(a, function() {
+                       if (o[this.name]) {
+                           if (!o[this.name].push) {
+                               o[this.name] = [o[this.name]];
+                           }
+                           o[this.name].push(this.value || '');
+                       } else {
+                           o[this.name] = this.value || '';
+                       }
+                   });
+                   return o;
+                  };
+                var form = $('form#contact-form'),
+                  url = 'https://script.google.com/macros/s/AKfycbxaBcyL4MXUQGSEIMtjHAS6Xrj-3NSAMBquIvEtWh7PT6PAYkFL/exec';
+                  form.submit(function(e){
+                    e.preventDefault();
+                  var jqxhr = $.ajax({
+                    url: url,
+                    method: "GET",
+                    dataType: "json",
+                    data: form.serializeObject()
+                  });
+                    $(".thanks").html("Thank you for getting in touch!").css("font-size","4rem");
+                    $(".form-control").remove();
+                    $("#submit").remove();
+                  });
+                });
+    </script>
 
 
     </body>
