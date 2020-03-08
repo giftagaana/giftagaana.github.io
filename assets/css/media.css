@@ -314,7 +314,7 @@
     }
 }
 @media (max-width:380px){
-    .theme-btn, .theme-btn-1 {
+    .theme-btn, .theme-btn-1, .theme-btn-2, .theme-btn-3 {
         min-width: 130px;
     }
     .caption-text .light-font{

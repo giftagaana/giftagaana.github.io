@@ -352,6 +352,26 @@ h2,h3,h4,h5,h6{
     color: #fff;
     background-color: #1d1e1f;
 }
+.theme-btn-2{
+    color: #0e43f1;   
+    background-color: #3b4791;
+    border: 1px solid #e7e7ec ;
+    color: #37414c;   
+}
+.theme-btn-2:hover, .theme-btn-1:focus{
+    color: #fff;
+    background-color: #0e70d1;
+}
+.theme-btn-3{
+    color: #0e43f1;   
+    background-color: #1c7a24;
+    border: 1px solid #e7e7ec ;
+    color: #37414c;   
+}
+.theme-btn-3:hover, .theme-btn-1:focus{
+    color: rgb(216, 224, 215);
+    background-color: #19eb23;
+}
 .theme-btn:hover,.theme-btn:focus, .form-submit > input[type="submit"]:focus, .form-submit > input[type="submit"]:hover{
     color: #1d1e1f;
     border-color: #1d1e1f;
@@ -1344,6 +1364,17 @@ a:focus {
     padding: 18px;
 }
 /*------------------------Listen Soundcloud Or Youtube Ends------------------------ */
+
+
+/*---------------------About Us Background Starts------------------------ */
+.aboutus-bg{
+    background-image: url(../img/background/aboutus.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*------------------------About Us Background Ends------------------------ */
 
 /*-------------------Our Recent News  Starts------------------- */
 .blog-wrap{
